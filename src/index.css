@@ -5,9 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(39, 39, 39);
+  color: rgb(241, 241, 241);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+.album-title {
+  font-size:14px;
+  color: #ffffff;
+}
+
+.artist-name {
+  font-size:14px; 
+  color: #a0a0a0
 }
