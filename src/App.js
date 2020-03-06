@@ -5,16 +5,15 @@ import data from './data.json'
 export const App = () => {
   console.log(data)
   return (
-    <div>
-     {data.albums.items.map(song => {
+    <div class="album-title">
+     {data.albums.items.map(item => {
         return <Album 
-        key={song.id} 
-        albumTitle={song.name}
+        key={item.id} 
+        albumTitle={item.name}
          />
       })}
 
     </div>
-
 
   )
 }
