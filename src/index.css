@@ -14,20 +14,5 @@ code {
     monospace;
 }
 
-.album-title {
-  font-size:14px;
-  color: #ffffff;
-}
 
-.album-title :hover {
-  text-decoration: underline;
-}
 
-.artist-name {
-  font-size:14px; 
-  color: #a0a0a0
-}
-
-.artist-title :hover {
-  text-decoration: underline;
-}

@@ -1,0 +1,36 @@
+.album-title {
+  font-size:14px;
+  color: #ffffff;
+  cursor: pointer,
+}
+
+.album-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.album-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.album-card :hover {
+  text-decoration: underline;
+}
+
+.artist-name {
+  font-size:14px; 
+  color: #a0a0a0;
+  cursor: pointer;
+}
+
+.artist-title :hover {
+  text-decoration: underline;
+}
+
+@media (min-width:1025px) {
+.album-container {
+  max-width: 100%;
+}
+}
