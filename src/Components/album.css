@@ -1,3 +1,4 @@
+
 .album-title {
   font-size:14px;
   color: #ffffff;
@@ -7,12 +8,14 @@
 .album-container {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .album-card {
   display: flex;
   flex-direction: column;
   margin: 1rem;
+  align-items: center;
 }
 
 .album-card :hover {
@@ -30,7 +33,14 @@
 }
 
 @media (min-width:1025px) {
+
+img {
+height: 220px;
+width: 220px;
+}
+
 .album-container {
-  max-width: 100%;
+max-width: 100%;
+justify-content: flex-start;
 }
 }
