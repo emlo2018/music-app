@@ -14,18 +14,25 @@ code {
     monospace;
 }
 
-.main-title {
-  padding:20px;
-  justify-content: center;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+a {
+  text-decoration: none;
 }
 
-@media (min-width: 650px) {
 .main-title {
-align-items: flex-start; 
-padding: 1,5rem;
+ padding:20px;
+ justify-content: center;
+ display: flex;
+ flex-flow: column;
+ align-items: center;
 }
+
+
+@media (min-width: 650px) {
+
+.main-title {
+ align-items: flex-start; 
+ padding: 1.5rem;
+ }
+ 
 }
 

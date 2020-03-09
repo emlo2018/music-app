@@ -6,8 +6,10 @@ import 'index.css';
 export const App = () => {
  
   return (
-    <main className="main-title"><h1>New albums & singles</h1>
-      <article class="album-container">
+    <section className="main-title">
+      <h1>New albums & singles</h1>
+
+      <article className="album-container">
         {data.albums.items.map(item => {
           return <Album
             key={item.id}
@@ -17,7 +19,7 @@ export const App = () => {
           />
         })}
       </article>
-    </main>
+    </section>
 
   )
 }

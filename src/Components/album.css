@@ -1,10 +1,4 @@
 
-.album-title {
-  font-size:14px;
-  color: #ffffff;
-  cursor: pointer,
-}
-
 .album-container {
   display: flex;
   flex-flow: row wrap;
@@ -22,6 +16,12 @@
   text-decoration: underline;
 }
 
+.album-title {
+  font-size:14px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 .artist-name {
   font-size:14px; 
   color: #a0a0a0;
@@ -32,15 +32,44 @@
   text-decoration: underline;
 }
 
+.cover-image:hover {
+ filter: brightness(50%);
+}
+
+.icons {
+ filter: invert(100%);
+ position: relative;
+}
+
+.dots, .heart {
+  width: 25px;
+  height: 25px;
+  margin: 12px;
+}
+
+.play {
+  transition: all .2s ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.play:hover {
+  transform: scale(1.2);
+}
+
 @media (min-width:1025px) {
 
-img {
-height: 220px;
-width: 220px;
-}
+.cover-image {
+ max-height: 220px;
+ max-width: 220px;
+ }
 
 .album-container {
-max-width: 100%;
-justify-content: flex-start;
-}
+ justify-content: flex-start;
+ }
+
+.album-card {
+ max-width: 25%;
+ }
+
 }
