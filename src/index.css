@@ -14,10 +14,6 @@ code {
     monospace;
 }
 
-a {
-  text-decoration: none;
-}
-
 .main-title {
  padding:20px;
  justify-content: center;

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Album } from './Components/Album';
 import data from './data.json'
-import 'index.css';
 
 export const App = () => {
  
@@ -14,6 +13,7 @@ export const App = () => {
           return <Album
             key={item.id}
             albumCover={item.images[1].url}
+            link={item.external_urls.spotify}
             albumTitle={item.name}
             artistName={item.artists[0].name}
           />

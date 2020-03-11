@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 
 .album-container {
   display: flex;
@@ -8,7 +11,7 @@
 .album-card {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 1.1rem;
   align-items: center;
 }
 
@@ -33,24 +36,31 @@
 }
 
 .cover-image:hover {
- filter: brightness(50%);
+ filter: brightness(0.5);
 }
 
 .icons {
- filter: invert(100%);
  position: relative;
+ top: -180px;
+ color: rgba(255, 0, 0, 0);
+ opacity: 0;
+}
+
+.icons:hover {
+ filter: invert(100%);
+ opacity: 1;
 }
 
 .dots, .heart {
-  width: 25px;
-  height: 25px;
+  width: 2rem;
+  height: 2rem;
   margin: 12px;
 }
 
 .play {
   transition: all .2s ease-in-out;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 .play:hover {
@@ -70,6 +80,12 @@
 
 .album-card {
  max-width: 25%;
+ }
+
+.icons {
+ filter: invert(100%);
+ position: relative;
+ top: -165px;
  }
 
 }
