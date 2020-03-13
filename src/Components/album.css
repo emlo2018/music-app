@@ -11,12 +11,17 @@ a {
 .album-card {
   display: flex;
   flex-direction: column;
-  margin: 1.1rem;
+  margin: 1em;
   align-items: center;
+  cursor: pointer;
 }
 
 .album-card :hover {
-  text-decoration: underline;
+ text-decoration: underline;
+}
+
+.cover {
+  position: relative;
 }
 
 .album-title {
@@ -25,30 +30,40 @@ a {
   cursor: pointer;
 }
 
-.artist-name {
+.artist-title {
   font-size:14px; 
   color: #a0a0a0;
-  cursor: pointer;
-}
-
-.artist-title :hover {
-  text-decoration: underline;
-}
-
-.cover-image:hover {
- filter: brightness(0.5);
 }
 
 .icons {
+ filter: invert(100%);
+
+ align-items: center;
+  justify-content: center;
  position: relative;
+ left: 50px;
  top: -180px;
- color: rgba(255, 0, 0, 0);
- opacity: 0;
+ display: none;
+ cursor: pointer;
+ transition: 0.2s;
+} 
+
+.cover-image {
+  object-fit: cover;
+  transition: 0.3s;
+  width: 100%;
 }
 
-.icons:hover {
- filter: invert(100%);
+.cover:hover .cover-image {
+ filter: brightness(0.5);
+}
+
+.cover-image:hover ~ .icons {
  opacity: 1;
+}
+
+.cover:hover .icons {
+ display: block;
 }
 
 .dots, .heart {
@@ -70,8 +85,8 @@ a {
 @media (min-width:1025px) {
 
 .cover-image {
- max-height: 220px;
- max-width: 220px;
+ /* max-height: 220px;
+ max-width: 220px; */
  }
 
 .album-container {
@@ -83,7 +98,6 @@ a {
  }
 
 .icons {
- filter: invert(100%);
  position: relative;
  top: -165px;
  }
