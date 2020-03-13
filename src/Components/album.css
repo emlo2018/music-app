@@ -1,19 +1,19 @@
 a {
-  text-decoration: none;
+ text-decoration: none;
 }
 
 .album-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: center;
 }
 
 .album-card {
-  display: flex;
-  flex-direction: column;
-  margin: 1em;
-  align-items: center;
-  cursor: pointer;
+ display: flex;
+ flex-direction: column;
+ margin: 1em;
+ align-items: center;
+ cursor: pointer;
 }
 
 .album-card :hover {
@@ -21,25 +21,24 @@ a {
 }
 
 .cover {
-  position: relative;
+ position: relative;
 }
 
 .album-title {
-  font-size:14px;
-  color: #ffffff;
-  cursor: pointer;
+ font-size:14px;
+ color: #ffffff;
+ cursor: pointer;
 }
 
 .artist-title {
-  font-size:14px; 
-  color: #a0a0a0;
+ font-size:14px; 
+ color: #a0a0a0;
 }
 
 .icons {
  filter: invert(100%);
-
  align-items: center;
-  justify-content: center;
+ justify-content: center;
  position: relative;
  left: 50px;
  top: -180px;
@@ -49,9 +48,9 @@ a {
 } 
 
 .cover-image {
-  object-fit: cover;
-  transition: 0.3s;
-  width: 100%;
+ object-fit: cover;
+ transition: 0.3s;
+ width: 100%;
 }
 
 .cover:hover .cover-image {
@@ -67,27 +66,22 @@ a {
 }
 
 .dots, .heart {
-  width: 2rem;
-  height: 2rem;
-  margin: 12px;
+ width: 2rem;
+ height: 2rem;
+ margin: 12px;
 }
 
 .play {
-  transition: all .2s ease-in-out;
-  width: 3.5rem;
-  height: 3.5rem;
+ transition: all .2s ease-in-out;
+ width: 3.5rem;
+ height: 3.5rem;
 }
 
 .play:hover {
-  transform: scale(1.2);
+ transform: scale(1.2);
 }
 
 @media (min-width:1025px) {
-
-.cover-image {
- /* max-height: 220px;
- max-width: 220px; */
- }
 
 .album-container {
  justify-content: flex-start;
