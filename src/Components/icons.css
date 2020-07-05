@@ -21,13 +21,13 @@
   }
   
   .playIcon {
-    width: 130px;
+    width: 110px;
     filter: invert(1);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
   
   .playIcon:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   
   .dotsIcon {
