@@ -1,99 +1,30 @@
-a {
- text-decoration: none;
-}
-
-.album-container {
- display: flex;
- flex-flow: row wrap;
- justify-content: center;
-}
-
-.album-card {
- display: flex;
- flex-direction: column;
- margin: 1em;
- align-items: center;
- cursor: pointer;
-}
-
-.album-card :hover {
- text-decoration: underline;
-}
-
-.cover {
- position: relative;
-}
-
-.album-title {
- font-size:14px;
- color: #ffffff;
- cursor: pointer;
-}
-
-.artist-title {
- font-size:14px; 
- color: #a0a0a0;
-}
-
-.icons {
- filter: invert(100%);
- align-items: center;
- justify-content: center;
- position: relative;
- left: 50px;
- top: -180px;
- display: none;
- cursor: pointer;
- transition: 0.2s;
-} 
-
-.cover-image {
- object-fit: cover;
- transition: 0.3s;
- width: 100%;
-}
-
-.cover:hover .cover-image {
- filter: brightness(0.5);
-}
-
-.cover-image:hover ~ .icons {
- opacity: 1;
-}
-
-.cover:hover .icons {
- display: block;
-}
-
-.dots, .heart {
- width: 2rem;
- height: 2rem;
- margin: 12px;
-}
-
-.play {
- transition: all .2s ease-in-out;
- width: 3.5rem;
- height: 3.5rem;
-}
-
-.play:hover {
- transform: scale(1.2);
-}
-
-@media (min-width:1025px) {
-
-.album-container {
- justify-content: flex-start;
- }
-
-.album-card {
- max-width: 25%;
- }
-
-.icons {
- position: relative;
- top: -165px;
- }
-
-}
+.albumCard {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .imageContainer {
+    position: relative;
+    background-color: black;
+  }
+  
+  .albumImage {
+    display: block;
+    width: 100%;
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  .imageContainer:hover .albumImage {
+    opacity: 0.4;
+  }
+  
+  .albumTitle {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .albumTitle:hover {
+    text-decoration: underline;
+  }

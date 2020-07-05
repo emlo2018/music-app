@@ -1,20 +1,29 @@
-import React from 'react';
-import './album.css';
+import React from "react";
+import { Artist } from "./Artist";
+import { Icons } from "./Icons";
+import "./album.css";
 
 export const Album = props => {
+  const { artists, name, external_urls, images, id } = props.item;
   return (
-    
-  <section className="album-card">
-   <section className="cover">
-    <img className="cover-image" src={props.albumCover} alt='Album Cover'></img>
-     <section className="icons">
-      <img className="heart" src="icons/heart.svg" alt="heart"></img>
-      <img className="play" src="icons/play.svg" alt="play icon"></img>
-      <img className="dots" src="icons/dots.svg" alt="dots"></img>
-     </section>
-   </section>
-  <a className="album-title" href={props.link}><h2>{props.albumTitle}</h2></a>
-  <a href={props.artistLink}><h4 className="artist-title">{props.artistName}</h4></a>
-  </section> 
-  )
-}
+    <article className="albumCard" key={id}>
+      <div className="imageContainer">
+        <img className="albumImage" src={images[0].url} alt="Album cover" />
+        <Icons />
+      </div>
+      <a
+        className="albumTitle"
+        href={external_urls.spotify}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {name}
+      </a>
+      <div className="artistContainer">
+        {artists.map(artist => {
+          return <Artist key={artist.id} item={artist} />;
+        })}
+      </div>
+    </article>
+  );
+};
